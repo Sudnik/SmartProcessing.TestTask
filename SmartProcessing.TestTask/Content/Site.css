@@ -1,0 +1,112 @@
+﻿body {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #83a0a9;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-direction: row;
+}
+
+table {
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+img {
+    margin: 10px;
+}
+
+fieldset {
+    border: 1px solid #ebebeb;
+}
+
+input[type=submit], input[type=reset] {
+    margin-right: 10px;
+}
+
+.main-footer a {
+    padding: 0px 5px 0px 5px;
+}
+
+.form-group-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-direction: row;
+}
+
+.form-control-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+.form-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 10px 20px;
+}
+
+.validation-error {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.table-container {
+    margin-top: 40px;
+    overflow: auto;
+}
+
+.main-content {
+    padding: 5px;
+    background-color: rgba(255,255,255,.3);
+    box-shadow: 20px 0 20px -20px rgba(0,0,0,.4), -20px 0 20px -20px rgba(0,0,0,.4);
+    border-radius: 5px;
+}
+
+.users-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.users-table td, .users-table th {
+    border: 1px solid #ddd;
+}
+
+.users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+    background-color: #ddd;
+}
+
+.users-table th {
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    header, footer {
+        flex-direction: column;
+    }
+
+    .form-group-container {
+        flex-direction: column;
+    }
+}

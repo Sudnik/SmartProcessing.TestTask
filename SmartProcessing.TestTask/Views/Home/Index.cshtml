@@ -1,0 +1,64 @@
+﻿<h2>SmartProcessing. Тестовое задание:</h2>
+<div class="form-container">
+    <form action="javascript:void(0);" onsubmit="onFormSubmit();" onreset="onFormReset()" autocomplete="off">
+        <fieldset>
+            <legend>Пользователь:</legend>
+            <div class="form-group-container">
+                <input type="hidden" name="user-id" id="user-id" value="0" />
+                <div class="form-control-container">
+                    <div class="form-control-caption">
+                        <label>Имя</label>
+                        <label class="validation-error hide" id="firstname-validation-error">Обязательное поле</label>
+                    </div>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="form-control-container">
+                    <div class="form-control-caption">
+                        <label>Фамилия</label>
+                    </div>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+            </div>
+            <div class="form-group-container">
+                <div class="form-control-container">
+                    <div class="form-control-caption">
+                        <label>Email</label>
+                        <label class="validation-error hide" id="email-validation-error">Некорректный Email</label>
+                    </div>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-control-container">
+                    <div class="form-control-caption">
+                        <label>Возраст</label>
+                        <label class="validation-error hide" id="age-validation-error">Введите число в диапазоне 0-150</label>
+                    </div>
+                    <input type="text" name="age" id="age">
+                </div>
+            </div>
+            <div class="form-buttons-container">
+                <input type="submit" value="Сохранить" name="save-button" id="save-button">
+                <input type="reset" value="Очистить" name="clear-button" id="clear-button">
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="table-container">
+    <table class="users-table" id="users-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Возраст</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="users-table-body" id="users-table-body">
+            <tr id="loading-row">
+                <th colspan="6">Loading...</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="~/Content/Main.js"></script>
